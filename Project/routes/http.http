@@ -1,0 +1,20 @@
+POST http://localhost:8080/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"Joshqin",
+    "password":"991788473"
+}
+###
+GET http://localhost:8080
+### 
+GET http://localhost:8080/profile HTTP/1.1
+Authorization: token 12345
+###
+POST  http://localhost:8080/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"Joshqin",
+    "password":123456789
+}
